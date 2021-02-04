@@ -1,14 +1,14 @@
-import { AlbumStorePage } from './app.po';
+import { AlbumStorePage } from './app.po'
 
 describe('album-store App', () => {
-  let page: AlbumStorePage;
+  let page: AlbumStorePage
 
   beforeEach(() => {
-    page = new AlbumStorePage();
-  });
+    page = new AlbumStorePage()
+  })
 
   it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
-});
+    page.navigateTo()
+    expect(page.getParagraphText()).toEqual('app works!')
+  })
+})
