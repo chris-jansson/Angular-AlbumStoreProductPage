@@ -2,7 +2,7 @@
 // https://karma-runner.github.io/0.13/config/configuration-file.html
 
 const argv = require('minimist')(process.argv.slice(2)),
-  part = (argv.part !== true) && argv.part
+  part = (argv.part !== true) && argv.part;
 
 module.exports = function (config) {
   config.set({
@@ -47,12 +47,12 @@ module.exports = function (config) {
       suppressSkipped: false,
       showSpecTiming: true,
       failFast: false
-    },
+    },           
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false
-  })
-}
+  });
+};
